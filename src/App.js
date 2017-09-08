@@ -8,7 +8,7 @@ import Home from './containers/Home/';
 const App = () => (
 	<Router>
 		<div>
-			<Route exact path="/" component={Home} />
+			<Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
 			{/* <Route path="/about" component={About}/> */}
 		</div>
 	</Router>
