@@ -4,6 +4,7 @@
 	"private": true,
 	"homepage": "https://giildev.github.io/Radical-Ecommerce/",
 	"dependencies": {
+		"firebase": "^4.12.0",
 		"gh-pages": "^1.0.0",
 		"node-sass-chokidar": "^0.0.3",
 		"npm-run-all": "^4.1.1",
@@ -14,8 +15,7 @@
 	},
 	"scripts": {
 		"build-css": "node-sass-chokidar src/ -o src/",
-		"watch-css":
-			"npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+		"watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
 		"start-js": "react-scripts start",
 		"start": "npm-run-all -p watch-css start-js",
 		"build": "npm run build-css && react-scripts build",
