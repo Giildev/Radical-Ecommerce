@@ -8,7 +8,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<p>Work in progress</p>
+				<p>Work in progresss</p>
 			</div>
 		);
 	}
