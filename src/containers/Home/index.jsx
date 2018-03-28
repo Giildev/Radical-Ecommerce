@@ -1,6 +1,7 @@
+// Dependencies
 import React, { Component } from 'react';
-import Firebase from '../../firebaseConfig'
 
+// Components & Containers
 import './style.css';
 
 class Home extends Component {

@@ -1,10 +1,13 @@
+// Dependencies
 import React from "react";
+
+// Components & Containers
 import "./style.css";
 
-const Empty = () => (
+const Component = () => (
   <div>
     <h1>Code</h1>
   </div>
 );
 
-export default Empty;
+export default Component;
