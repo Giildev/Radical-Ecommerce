@@ -1,6 +1,6 @@
 // Dependencies
 import React, { Component } from "react";
-import Gmap from "../../components/Gmap/";
+
 // Components & Containers
 import "./style.css";
 
@@ -9,7 +9,6 @@ class Home extends Component {
     return (
       <div>
         <p>Work in progresss</p>
-        <Gmap />
       </div>
     );
   }
