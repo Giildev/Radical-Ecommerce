@@ -7,7 +7,7 @@ import "./style.css";
 export class Input extends Component {
   render() {
     return (
-      <div>
+      <div className="input__container">
         <input
           id={this.props.inputName}
           className="input"
@@ -25,9 +25,12 @@ export class Input extends Component {
 export class TextArea extends Component {
   render() {
     return (
-      <div>
-        <textarea placeholder={this.props.textAreaPlaceHolder} name="" id="" className="textArea"></textarea>
-      </div>
-    )
+      <textarea
+        placeholder={this.props.textAreaPlaceHolder}
+        name=""
+        id=""
+        className="textArea"
+      />
+    );
   }
 }
