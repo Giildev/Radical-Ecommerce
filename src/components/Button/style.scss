@@ -1,0 +1,48 @@
+.btn {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: white;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  border: none;
+  padding: .5rem 1rem;
+  transition: all .2s;
+
+  &__round {
+    border-radius: 4rem;
+  }
+
+  &__black {
+    background-color: #000;
+  }
+
+  &__grey {
+    background-color: #555555;
+  }
+
+  &__primary {
+    background-color: #f8292a;
+  }
+
+  &__ico {
+    margin: 0 1rem;
+    width: 2rem;
+    height: auto;
+  }
+
+  &:hover {
+    font-size: 1.8rem;
+    padding: .7rem 1.2rem;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    transform: translate(0, .2rem)
+  }
+}

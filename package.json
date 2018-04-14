@@ -6,6 +6,7 @@
 	"dependencies": {
 		"apollo-boost": "^0.1.4",
 		"gh-pages": "^1.0.0",
+		"google-map-react": "^0.34.0",
 		"graphql": "^0.13.2",
 		"graphql-tag": "^2.8.0",
 		"node-sass-chokidar": "^0.0.3",

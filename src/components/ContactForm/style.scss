@@ -1,0 +1,64 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 20rem;
+  background-color: #eeeeee9c;
+
+  &__info{
+
+    height: 20rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #282828;
+
+    &__title {
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: inherit;
+    }
+
+    &__subTitle {
+    font-size: 3.2rem;
+    font-weight: lighter;
+    color: inherit;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__address{
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      font-size: 2.6rem;
+      color: #ff3333;
+    }
+
+    &__subTitle {
+      font-size: 2rem;
+    }
+  }
+
+  &__address, &__form {
+    flex: 1 0 0;
+  }
+
+  &__form {
+
+  }
+
+  &__row {
+    display: flex;
+
+    &__send {
+      display: inherit;
+      margin-top: 3rem;
+    }
+  }
+}

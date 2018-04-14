@@ -1,0 +1,26 @@
+.marker {
+  border-radius: 50% 50% 50% 0;
+  border: 4px solid #ff0606;
+  width: 20px;
+  height: 20px;
+  transform: rotate(-45deg);
+
+  &::after{
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+  background-color: #000000;
+  }
+}
+
+.map{
+  height: 50vh;
+  width: 100vw;
+  margin: auto;
+}
