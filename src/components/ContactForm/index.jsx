@@ -1,7 +1,7 @@
 // Dependencies
 import React from "react";
 import { Input, TextArea } from "../Input/";
-import { ButtonRound } from "../Button/";
+import { Button } from "../Button/";
 
 // Components & Containers
 import "./style.css";
@@ -82,7 +82,7 @@ const ContactForm = () => (
           <TextArea textAreaPlaceHolder="Mensaje" />
         </div>
         <div className="contact__row__send">
-          <ButtonRound buttonText="Enviar" />
+          <Button buttonText="Enviar" />
         </div>
       </div>
     </div>
