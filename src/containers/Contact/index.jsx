@@ -11,6 +11,7 @@ class Contact extends Component {
     return (
       <div>
         <Gmap />
+        
         <ContactForm />
       </div>
     );
