@@ -34,7 +34,15 @@
 
   &:hover {
     font-size: 1.8rem;
-    padding: .7rem 2.2rem;
+    padding: .7rem 1.2rem;
     cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    transform: translate(0, .2rem)
   }
 }

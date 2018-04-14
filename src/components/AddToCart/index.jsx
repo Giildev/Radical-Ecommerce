@@ -11,6 +11,7 @@ const AddToCart = () => (
     <ButtonWithIcon
       bgColor="primary"
       btnType=""
+      btnAction="Add to Cart"
       icoLeft={Img}
       buttonText="Add to Cart"
       icoRight={Img}

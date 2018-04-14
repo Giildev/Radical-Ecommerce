@@ -22,6 +22,9 @@ export class Button extends Component {
 }
 
 export class ButtonWithIcon extends Component {
+  changesHandler = (event, action) => {
+    console.log(event, action);
+  };
   render() {
     return (
       <div>
@@ -30,6 +33,7 @@ export class ButtonWithIcon extends Component {
           btn btn__${this.props.bgColor} 
           btn__${this.props.btnType}
           `}
+          onClick={event => this.changesHandler("Click", this.props.btnAction)}
         >
           <img className="btn__ico" src={this.props.icoLeft} alt="Svg" />
           {this.props.buttonText}
