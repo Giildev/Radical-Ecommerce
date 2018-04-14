@@ -4,14 +4,12 @@ import React, { Component } from "react";
 // Components & Containers
 import "./style.css";
 
-class Home extends Component {
+export class ButtonRound extends Component {
   render() {
     return (
       <div>
-        <p>Work in progresss</p>
+        <button className="btn">{this.props.buttonText}</button>
       </div>
     );
   }
 }
-
-export default Home;
