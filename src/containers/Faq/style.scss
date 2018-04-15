@@ -1,0 +1,25 @@
+.faq {
+
+  &__Img {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    object-fit: none;
+    background-position: center;
+    font-weight: 900;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__title {
+      line-height: 14rem;
+      font-size: 12rem;
+      color: white;
+    }
+
+    &__subTitle {
+      line-height: 14rem;
+      font-size: 6rem;
+      color: #f8292a;
+    }
+  }
+}

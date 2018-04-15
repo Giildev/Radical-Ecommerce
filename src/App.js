@@ -9,6 +9,7 @@ import gql from "graphql-tag";
 import "./App.css";
 import Home from "./containers/Home/";
 import Contact from './containers/Contact/'
+import Faq from './containers/Faq/'
 
 const client = new ApolloClient({
   uri: "https://w5xlvm3vzz.lp.gql.zone/graphql"
@@ -32,6 +33,7 @@ const App = () => (
       <div>
         <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
         <Route path="/contact" component={Contact}/>
+        <Route path="/faq" component={Faq}/>
         {/* <Route path="/about" component={About}/> */}
       </div>
     </Router>
