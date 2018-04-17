@@ -27,12 +27,12 @@ const Header = () => (
     </nav>
 
     <div className="userMeta">
-      <button className="cart">
-        <svg className="cart__icon">
-          <use xlinkHref="../../assets/img/sprites.svg#icon-shopping-cart"></use>
-        </svg>
+      <div className="cart">
+        <div className="cart__icon">
+         <a href="#"><img href="../../assets/img/ICON/cart.png"></img></a> 
+        </div>
         <span className="cart__notification">5</span>
-      </button>
+      </div>
   
       <button className="btnRound btnRound--red">Registrarse</button>
     
