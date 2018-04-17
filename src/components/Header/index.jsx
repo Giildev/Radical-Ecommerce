@@ -12,7 +12,14 @@ const Header = () => (
 
     <nav className="menu">
       <ul className="menu__list">
-        <li className="menu__list__item">Tienda</li>
+        <li className="menu__list__item__dropdown">Tienda
+          <ul className="dropdown">
+            <li className="dropdown__item">Caballeros</li>
+            <li className="dropdown__item">Damas</li>
+            <li className="dropdown__item">Niños</li>
+          </ul> 
+        </li>
+
         <li className="menu__list__item">Ofertas</li>
         <li className="menu__list__item">Nuevo</li>
         <li className="menu__list__item">Contacto</li>
