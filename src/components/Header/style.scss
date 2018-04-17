@@ -1,0 +1,160 @@
+
+
+.headerContainer {
+  box-shadow: var(--shadow-light); 
+  min-height: 6rem;
+  display: flex;
+  padding: 2rem 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+
+.logo{
+  width: 20rem;
+  height: auto;
+}
+
+
+.menu{
+  flex-grow: 1;
+  padding-left: 30rem;
+  padding-right: 5rem;
+  
+
+  &__list{
+    display: flex;
+    justify-content: space-evenly;
+
+    &__item{
+      list-style: none;
+      font-size: 1.7rem;
+      font-weight: 500;
+      &:hover{
+        cursor: pointer;
+      }
+      
+        &__dropdown{
+          transition:all ease .2s;
+          position: relative;
+          list-style: none;
+          font-size: 1.7rem;
+          font-weight: 500;
+          &:hover{cursor: pointer;}
+          &:hover > .dropdown{
+            visibility: visible;
+            opacity: 1;
+            transition: opacity .4s linear;
+          }
+        }
+
+      }
+      
+  }
+
+}
+
+.dropdown{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s .4s, opacity .4s linear;
+  background-color: var(--white);
+  position: absolute;
+  //top: 2rem;
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  padding: 1rem;
+  box-shadow: var(--shadow-light);
+  
+  
+  &:hover{
+    cursor: pointer;
+    }
+  
+  &__item{
+    padding: 0.5em;
+    
+    &:hover{
+      transition:all ease .2s;
+      color: var(--white);
+      background-color: var(--primary);
+    }
+  }
+}
+
+.userMeta{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+
+.cart{
+  display: flex;
+  align-items: flex-start; 
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  background-image: url(../../assets/img/ICON/cart.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &:hover{
+    cursor: pointer;
+  }
+  
+
+  &__icon{
+    width: 4rem;
+    height: 4rem; 
+  }
+
+
+  &__notification{
+      background-color: var(--primary);
+      border-radius: 50%;
+      width: 1.50rem;
+      height: 1.50rem;
+      padding: 0 0.4rem;
+      font-weight: 600;
+      color: var(--white); 
+      text-align: center;
+  }
+
+}
+
+.btnRound{
+  height: 3rem;
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
+  border-radius: 20rem;
+  padding: 0.2rem 1.5rem;
+  color: var(--white);
+  transition: all ease-in .2s;
+
+
+    &--red{
+      background-color: var(--primary);
+      &:hover{
+        cursor: pointer;
+        background-color:darken(#f8292a, 15%);
+      }
+    }
+    
+    &--black{
+      background-color: var(--black-2);
+      &:hover{
+        cursor: pointer;
+        background-color:lighten(#444444, 15%);
+      }
+    }
+
+}
+
+

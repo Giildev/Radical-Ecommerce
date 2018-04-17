@@ -7,7 +7,19 @@
 *::after {
   box-sizing: inherit; }
 
+:root {
+  --primary: #f8292a;
+  --secondary: #444444;
+  --white: #ffffff;
+  --black-1: #000000;
+  --black-2: #262626;
+  --grey-1: #ebebeb;
+  --grey-2: #a4a4a4;
+  --grey-3: #b1b1b1;
+  --blue-1: #e7efff;
+  --shadow-light: -7.8px 7.8px 32px 0 rgba(0, 0, 0, 0.09); }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Raleway', sans-serif !important; }
