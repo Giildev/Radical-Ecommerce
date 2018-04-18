@@ -1,7 +1,9 @@
 // Dependencies
 import React, { Component } from "react";
 import Carousel from 'nuka-carousel';
-import Cart from "../../assets/img/icon/cart.png";
+import Slide1 from "../../assets/img/slider/slide1.jpg";
+import Slide2 from "../../assets/img/slider/slide2.jpg";
+import Slide3 from "../../assets/img/slider/slide3.jpg";
 
 // Components & Containers
 import "./style.css";
@@ -13,7 +15,7 @@ export default class Slider extends Component {
   render() {
     return (
       <div>
-        <Carousel speed={1000} autoplay={true} autoplayInterval={500} slideIndex={0} dragging={true} renderCenterRightControls={({ nextSlide }) => (
+        <Carousel className="slider" initialSlideHeight={100} speed={1000} autoplay={true} autoplayInterval={3000} slideIndex={0} dragging={true} renderCenterRightControls={({ nextSlide }) => (
           <div className="btnSlider" onClick={nextSlide}> ></div>
         )}
           renderCenterLeftControls={({ previousSlide }) => (
