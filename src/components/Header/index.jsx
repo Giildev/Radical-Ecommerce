@@ -75,3 +75,9 @@ export default class Header extends Component {
     );
   }
 }
+
+              <ul className="dropdown">
+               <li className="dropdown__item">Deportivos</li>
+               <li className="dropdown__item">Casuales</li>
+               <li className="dropdown__item">Accesorios</li>
+              </ul> 
