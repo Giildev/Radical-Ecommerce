@@ -1,6 +1,7 @@
 // Dependencies
 import React from "react";
-import Logo from "../../assets/img/logo-web.png";
+import Logo from "../../assets/img/logo-web.png"
+import {Sprite} from "../../assets/img/sprites.svg"
 
 // Components & Containers
 import "./style.css";
@@ -16,10 +17,15 @@ const Header = () => (
           <ul className="dropdown">
             <li className="dropdown__item">Caballeros</li>
             <li className="dropdown__item">Damas</li>
-            <li className="dropdown__item">Niños</li>
-          </ul>
+            <li className="menu__list__item__dropdown--subLevel">Niños
+              <ul className="dropdown">
+               <li className="dropdown__item">Deportivos</li>
+               <li className="dropdown__item">Casuales</li>
+               <li className="dropdown__item">Accesorios</li>
+              </ul> 
+            </li>
+          </ul> 
         </li>
-
         <li className="menu__list__item">Ofertas</li>
         <li className="menu__list__item">Nuevo</li>
         <li className="menu__list__item">Contacto</li>
@@ -28,7 +34,9 @@ const Header = () => (
 
     <div className="userMeta">
       <div className="cart">
-        <div className="cart__icon"/>
+        <div className="cart__icon">
+         <a href="#"><img href="../../assets/img/ICON/cart.png"></img></a> 
+        </div>
         <span className="cart__notification">5</span>
       </div>
 
