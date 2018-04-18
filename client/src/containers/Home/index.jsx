@@ -1,25 +1,36 @@
 // Dependencies
-import React, { Component } from 'react';
-import axios from 'axios';
+import React, { Component } from "react";
+import axios from "axios";
 
 // Components & Containers
 import "./style.css";
 
 class Home extends Component {
-	componentDidMount() {
-		axios.get(`http://localhost:4000/api/hello`)
-			.then(res => {
-				console.log(res.data)
-			})
+	constructor(props) {
+		super(props)
+	
+		this.state = {
+			 object: ''
+		}
 	}
+	
 
-	render() {
-		return (
-			<div>
-				<p>Work in progresss</p>
-			</div>
-		);
-	}
+  componentWillMount() {
+    axios.get(`http://localhost:4000/api/hello`).then(res => {
+			console.log(res.data)
+      this.setState({
+				object: res.data.object
+			})
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{this.state.object}</h1>
+      </div>
+    );
+  }
 }
 
 export default Home;

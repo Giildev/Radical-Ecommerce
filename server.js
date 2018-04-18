@@ -4,7 +4,9 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 app.get('/api/hello', (req, res) => {
-  res.send({ express: 'Hello From Express' });
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  res.send({ object: 'Hello from Node.js' });
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
