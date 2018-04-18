@@ -3,13 +3,14 @@ import React, { Component } from 'react';
 
 // Components & Containers
 import "./style.css";
+import Slider from '../../components/Slider';
 
 class Home extends Component {
-	
+
 	render() {
 		return (
 			<div>
-				<p>Work in progresss</p>
+				<Slider />
 			</div>
 		);
 	}
