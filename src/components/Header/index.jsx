@@ -1,6 +1,7 @@
 // Dependencies
 import React, { Component } from "react";
 import Logo from "../../assets/img/logo-web.png";
+import Cart from "../../assets/img/icon/cart.png";
 import { Link } from "react-router-dom";
 
 // Components & Containers
@@ -29,10 +30,27 @@ export default class Header extends Component {
                     Damas
                   </Link>
                 </li>
-                <li className="dropdown__item">
+                <li className="menu__list__item__dropdown--subLevel">
                   <Link className="menu__list__item-link" to="/kid">
                     Niños
                   </Link>
+                  <ul className="dropdown">
+                    <li className="dropdown__item">
+                      <Link className="menu__list__item-link" to="/sport">
+                        Deportivos
+                      </Link>
+                    </li>
+                    <li className="dropdown__item">
+                      <Link className="menu__list__item-link" to="/casual">
+                        Casuales
+                      </Link>
+                    </li>
+                    <li className="dropdown__item">
+                      <Link className="menu__list__item-link" to="/accesory">
+                        Accesorios
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
@@ -55,7 +73,7 @@ export default class Header extends Component {
         </nav>
         <div className="userMeta">
           <div className="cart">
-            <div className="cart__icon" />
+            <img className="cart__icon" src={Cart} alt="Cart" />
             <span className="cart__notification">5</span>
           </div>
           <Button
@@ -75,9 +93,3 @@ export default class Header extends Component {
     );
   }
 }
-
-              <ul className="dropdown">
-               <li className="dropdown__item">Deportivos</li>
-               <li className="dropdown__item">Casuales</li>
-               <li className="dropdown__item">Accesorios</li>
-              </ul> 

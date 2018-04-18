@@ -102,8 +102,8 @@
 
 .userMeta{
   display: flex;
-  justify-content: space-around;
-  flex: 2 0;
+  justify-content: space-evenly;
+  flex: 1 0;
   align-items: center;
 
   
@@ -112,6 +112,7 @@
 .cart{
   border: none;
   position: relative;
+  // flex: 1;
   
   &:hover{
     cursor: pointer;
