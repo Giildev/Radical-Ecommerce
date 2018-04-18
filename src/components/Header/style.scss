@@ -31,6 +31,12 @@
       list-style: none;
       font-size: 1.7rem;
       font-weight: 500;
+
+      &-link {
+        color: inherit;
+        text-decoration: none;
+      }
+
       &:hover{
         cursor: pointer;
       }
@@ -88,7 +94,7 @@
 .userMeta{
   display: flex;
   flex: 1;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   
@@ -128,33 +134,5 @@
 
 }
 
-.btnRound{
-  height: 3rem;
-  font-family: inherit;
-  font-weight: 700;
-  border: none;
-  border-radius: 20rem;
-  padding: 0.2rem 1.5rem;
-  color: var(--white);
-  transition: all ease-in .2s;
-
-
-    &--red{
-      background-color: var(--primary);
-      &:hover{
-        cursor: pointer;
-        background-color:darken(#f8292a, 15%);
-      }
-    }
-    
-    &--black{
-      background-color: var(--black-2);
-      &:hover{
-        cursor: pointer;
-        background-color:lighten(#444444, 15%);
-      }
-    }
-
-}
 
 

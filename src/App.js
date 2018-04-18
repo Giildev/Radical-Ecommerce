@@ -7,8 +7,9 @@ import gql from "graphql-tag";
 
 // Components & Containers
 import "./App.css";
+import Header from "./components/Header/";
 import Home from "./containers/Home/";
-import Contact from './containers/Contact/'
+import Contact from "./containers/Contact/";
 
 const client = new ApolloClient({
   uri: "https://w5xlvm3vzz.lp.gql.zone/graphql"
@@ -30,8 +31,9 @@ const App = () => (
   <ApolloProvider client={client}>
     <Router>
       <div>
+        <Header />
         <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
-        <Route path="/contact" component={Contact}/>
+        <Route path="/contact" component={Contact} />
         {/* <Route path="/about" component={About}/> */}
       </div>
     </Router>

@@ -5,6 +5,9 @@ import React, { Component } from "react";
 import "./style.css";
 
 export class Button extends Component {
+  changesHandler = (event, action) => {
+    console.log(event, action);
+  };
   render() {
     return (
       <div>
@@ -13,6 +16,7 @@ export class Button extends Component {
           btn btn__${this.props.bgColor} 
           btn__${this.props.btnType}
           `}
+          onClick={event => this.changesHandler("Click", this.props.btnAction)}
         >
           {this.props.buttonText}
         </button>

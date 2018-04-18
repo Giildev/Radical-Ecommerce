@@ -37,7 +37,8 @@
 
     &__title {
       font-size: 2.6rem;
-      color: #ff3333;
+      line-height: 6rem;
+      color: var(--primary);
     }
 
     &__subTitle {

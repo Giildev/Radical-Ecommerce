@@ -82,7 +82,12 @@ const ContactForm = () => (
           <TextArea textAreaPlaceHolder="Mensaje" />
         </div>
         <div className="contact__row__send">
-          <Button buttonText="Enviar" />
+          <Button
+            bgColor="primary"
+            btnType="round"
+            buttonText="Enviar"
+            btnAction="Send"
+          />
         </div>
       </div>
     </div>
