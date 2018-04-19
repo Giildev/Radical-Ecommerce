@@ -7,12 +7,10 @@
   padding: 2rem 1.5rem;
   justify-content: space-between;
   align-items: center;
-
-  
 }
 
 .logo{
-  width: 20rem;
+  width: 15rem;
   height: auto;
 }
 
@@ -21,6 +19,7 @@
   flex-grow: 1;
   padding-left: 30rem;
   padding-right: 5rem;
+  z-index: 99999999999999999999;
   
 
   &__list{
@@ -56,7 +55,6 @@
           &--subLevel{
             padding: 0.5rem;
             &:hover > .dropdown{
-              //margin: 1.5rem 4rem;
               visibility: visible;
               opacity: 1;
               transition: opacity .4s linear;

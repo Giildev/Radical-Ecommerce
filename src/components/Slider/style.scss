@@ -1,0 +1,24 @@
+.btnSlider{
+  background-color: var(--primary);
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  color: white;
+  letter-spacing: .1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  border: none;
+  padding: 0.2rem 1.5rem;
+  transition: all .2s;
+  font-family: inherit;
+  font-size: 1rem;
+  &:hover{
+    cursor: pointer;
+    background-color:lighten(#444444, 15%);
+  }
+}
+
+.slider{
+  min-height: 20rem;
+  max-height: 52rem;
+}
