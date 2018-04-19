@@ -6,7 +6,7 @@
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "i-concurrently" : "npm i -g concurrently && npm i concurrently",
-    "iAll": "i-concurrently && concurrently --kill-others-on-fail \"npm i\" \"npm i\""
+    "iAll": "npm run i-concurrently && concurrently --kill-others-on-fail \"npm i\" \"npm i\""
   },
   "dependencies": {
     "axios": "^0.18.0",
