@@ -5,7 +5,8 @@
     "client": "cd client && npm run start",
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-    "installAll": "npm install concurrently && concurrently --kill-others-on-fail \"npm install\" \"npm install\""
+    "i-concurrently" : "npm i -g concurrently && npm i concurrently",
+    "iAll": "i-concurrently && concurrently --kill-others-on-fail \"npm i\" \"npm i\""
   },
   "dependencies": {
     "axios": "^0.18.0",
