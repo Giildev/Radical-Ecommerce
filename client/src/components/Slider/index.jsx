@@ -1,13 +1,12 @@
 // Dependencies
 import React, { Component } from "react";
 import Carousel from 'nuka-carousel';
-import Slide1 from "../../assets/img/slider/slide1.jpg";
-import Slide2 from "../../assets/img/slider/slide2.jpg";
-import Slide3 from "../../assets/img/slider/slide3.jpg";
 
 // Components & Containers
 import "./style.css";
-import { auto } from "async";
+import Slide1 from "../../assets/img/slider/slide1.jpg";
+import Slide2 from "../../assets/img/slider/slide2.jpg";
+import Slide3 from "../../assets/img/slider/slide3.jpg";
 
 export default class Slider extends Component {
 
