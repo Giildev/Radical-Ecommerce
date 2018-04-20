@@ -1,16 +1,20 @@
 .btn {
   display: flex;
+  flex: 1;
+  width: 100%;
   height: 3rem;
   align-items: center;
   color: white;
   letter-spacing: .1rem;
+  font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.5rem;
+  padding: 0.2rem 1.5rem; 
   border: none;
-  padding: 0.2rem 1.5rem;
+  justify-content: center;
   transition: all .2s;
   font-family: inherit;
-  font-size: 1rem;
+
 
   &__round {
     border-radius: 20rem;
@@ -41,8 +45,9 @@
 
   &__ico {
     margin: 0 1rem;
-    width: 2rem;
-    height: auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: var(--white);
   }
 
   &:focus {
