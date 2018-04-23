@@ -1,6 +1,6 @@
 // Dependencies
 import React, { Component } from "react";
-//import axios from "axios";
+import axios from "axios";
 
 // Components & Containers
 import "./style.css";
@@ -17,6 +17,17 @@ export default class RegisterForm extends Component {
       password: ""
     };
   }
+
+  Singup = () => {
+    axios
+      .post(`http://localhost:4000/api/signup`, this.state)
+      .then(function(response) {
+        console.log(response.data);
+      })
+      .catch(function(error) {
+        console.log("error", error);
+      });
+  };
 
   render() {
     return (
@@ -107,7 +118,7 @@ export default class RegisterForm extends Component {
           <div>
             <button
               className="btn btn__primary btn__round"
-              onClick={event => console.log("Press")}
+              onClick={event => this.Singup()}
             >
               Enviar
             </button>
