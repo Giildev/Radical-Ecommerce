@@ -1,4 +1,10 @@
 .faq {
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    margin: var(--container);
+  }
 
   &__Img {
     display: flex;
@@ -9,6 +15,7 @@
     font-weight: 900;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 5rem;
 
     &__title {
       line-height: 14rem;
@@ -21,5 +28,21 @@
       font-size: 6rem;
       color: #f8292a;
     }
+  }
+
+  &__title {
+    font-size: 7.5rem;
+    color: var(--grey-3);
+
+    &-strong {
+      font-size: 10rem;
+      color: var(--black-1);
+    }
+  }
+
+  &__subTitle {
+    color: var(--black-1);
+    font-size: 1.8rem;
+    margin: 0 2rem 8rem 2rem;
   }
 }
