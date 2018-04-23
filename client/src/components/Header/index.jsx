@@ -76,18 +76,22 @@ export default class Header extends Component {
             <img className="cart__icon" src={Cart} alt="Cart" />
             <span className="cart__notification">5</span>
           </div>
-          <Button
-            bgColor="primary"
-            btnType="round"
-            buttonText="Registrarse"
-            btnAction="Sign Up"
-          />
+          <Link to="/register">
+            <Button
+              bgColor="primary"
+              btnType="round"
+              buttonText="Registrarse"
+              btnAction="Sign Up"
+            />
+          </Link>
+          <Link to="/login">
           <Button
             bgColor="black-2"
             btnType="round"
             buttonText="Iniciar Sesión"
             btnAction="Login"
           />
+          </Link>
         </div>
       </header>
     );

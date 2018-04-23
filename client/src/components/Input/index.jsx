@@ -12,7 +12,7 @@ export class Input extends Component {
           id={this.props.inputName}
           className="input"
           placeholder={this.props.inputPlaceHolder}
-          type={this.props.inputType}
+          type={this.props.inputType}          
         />
         <label className="label" htmlFor={this.props.inputName}>
           {this.props.inputLabel}

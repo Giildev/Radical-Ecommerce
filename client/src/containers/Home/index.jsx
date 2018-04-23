@@ -29,6 +29,7 @@ class Home extends Component {
       <div>
         <Slider />
         <h1>{this.state.object}</h1>
+
       </div>
     );
   }
