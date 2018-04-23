@@ -4,15 +4,17 @@ import React, { Component } from "react";
 // Components & Containers
 import "./style.css";
 
-export class Input extends Component {
+export class Input extends Component {  
   render() {
+    console.log(this.props.test)
     return (
       <div className="input__container">
         <input
           id={this.props.inputName}
           className="input"
           placeholder={this.props.inputPlaceHolder}
-          type={this.props.inputType}          
+          type={this.props.inputType}      
+          // onChange={console.log(this.props.test)}              
         />
         <label className="label" htmlFor={this.props.inputName}>
           {this.props.inputLabel}
