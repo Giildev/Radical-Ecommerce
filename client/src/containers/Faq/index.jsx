@@ -1,5 +1,6 @@
 // Dependencies
 import React, { Component } from "react";
+import SubHeader from "../../components/SubHeader/";
 
 // Components & Containers
 import "./style.css";
@@ -9,14 +10,8 @@ class Faq extends Component {
   render() {
     return (
       <div className="faq">
-        <div style={{ backgroundImage: `url(${FaqImg})` }} className="faq__Img">
-          <div className="faq__Img__text">
-            <div className="faq__Img__title">Preguntas Frecuentes</div>
-            <div className="faq__Img__subTitle">
-              Resuelve tus dudas antes de comprar
-            </div>
-          </div>
-        </div>
+        <SubHeader />
+
         <h1 className="faq__title">
           <strong>¿Dudas?</strong> No te preocupes
         </h1>
