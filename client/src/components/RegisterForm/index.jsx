@@ -4,19 +4,19 @@ import React, { Component } from "react";
 
 // Components & Containers
 import "./style.css";
-import { Input } from "../Input/";
-import { Button } from "../Button/";
 
 export default class RegisterForm extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      name: "",
+      lastName: "",
+      phone: "",
+      email: "",
+      password: ""
+    };
   }
-
-  changesHandler = (event) => {
-    console.log(event);
-  };
 
   render() {
     return (
@@ -25,78 +25,95 @@ export default class RegisterForm extends Component {
         <h3>Llena el formulario para comenzar a disfrutar de nuesto portal</h3>
         <div>
           <div className="contact__row">
-            <Input
-              inputType="text"
-              inputName="name"
-              inputPlaceHolder="Nombre"
-              inputLabel="Nombre"
-              test={(event) => {console.log(event.target.value)}}
-            />
+            <div className="input__container">
+              <input
+                id="name"
+                className="input"
+                placeholder="Nombre"
+                type="text"
+                onInput={e => {
+                  this.setState({ name: e.target.value });
+                }}
+              />
+              <label className="label" htmlFor="name">
+                Nombre
+              </label>
+            </div>
           </div>
           <div className="contact__row">
-            <Input
-              inputType="text"
-              inputName="lastName"
-              inputPlaceHolder="Apellido"
-              inputLabel="Apellido"
-              onChange={event => {
-                this.changeHandler(event.target);
-              }}
-            />
+            <div className="input__container">
+              <input
+                id="lastName"
+                className="input"
+                placeholder="Apellido"
+                type="text"
+                onInput={e => {
+                  this.setState({ lastName: e.target.value });
+                }}
+              />
+              <label className="label" htmlFor="lastName">
+                Apellido
+              </label>
+            </div>
           </div>
           <div className="contact__row">
-            <Input
-              inputType="email"
-              inputName="email"
-              inputPlaceHolder="Email"
-              inputLabel="Email"
-              onChange={event => {
-                this.changeHandler(event.target);
-              }}
-            />
+            <div className="input__container">
+              <input
+                id="email"
+                className="input"
+                placeholder="Email"
+                type="email"
+                onInput={e => {
+                  this.setState({ email: e.target.value });
+                }}
+              />
+              <label className="label" htmlFor="email">
+                Email
+              </label>
+            </div>
           </div>
           <div className="contact__row">
-            <Input
-              inputType="text"
-              inputName="phone"
-              inputPlaceHolder="Teléfono"
-              inputLabel="Número Telefónico"
-              onChange={event => {
-                this.changeHandler(event.target);
-              }}
-            />
+            <div className="input__container">
+              <input
+                id="phone"
+                className="input"
+                placeholder="Teléfono"
+                type="text"
+                onInput={e => {
+                  this.setState({ phone: e.target.value });
+                }}
+              />
+              <label className="label" htmlFor="phone">
+                Número Telefónico
+              </label>
+            </div>
           </div>
           <div className="contact__row">
-            <Input
-              inputType="password"
-              inputName="password"
-              inputPlaceHolder="Contraseña"
-              inputLabel="Contraseña"
-              onChange={event => {
-                this.changeHandler(event.target);
-              }}
-            />
-          </div>
-          <div className="contact__row">
-            <Input
-              inputType="password"
-              inputName="confPass"
-              inputPlaceHolder="Confirmar Contraseña"
-              inputLabel="Confirmar Contraseña"
-            />
+            <div className="input__container">
+              <input
+                id="password"
+                className="input"
+                placeholder="Contraseña"
+                type="password"
+                onInput={e => {
+                  this.setState({ password: e.target.value });
+                }}
+              />
+              <label className="label" htmlFor="password">
+                Contraseña
+              </label>
+            </div>
           </div>
           <div>
-            <Button
-              bgColor="primary"
-              btnType="round"
-              buttonText="Enviar"
-              btnAction="Send"
-            />
+            <button
+              className="btn btn__primary btn__round"
+              onClick={event => console.log("Press")}
+            >
+              Enviar
+            </button>
           </div>
         </div>
       </div>
     );
   }
 }
-
-
