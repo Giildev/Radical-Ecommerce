@@ -12,7 +12,7 @@ export default class Header extends Component {
   render() {
     return (
       <header className="headerContainer">
-        <Link to="/">
+        <Link to={process.env.PUBLIC_URL + "/"}>
           <img src={Logo} alt="Logo Radical" className="logo" />
         </Link>
         <nav className="menu">
@@ -21,32 +21,50 @@ export default class Header extends Component {
               Tienda
               <ul className="dropdown">
                 <li className="dropdown__item">
-                  <Link className="menu__list__item-link" to="/men">
+                  <Link
+                    className="menu__list__item-link"
+                    to={process.env.PUBLIC_URL + "/men"}
+                  >
                     Caballeros
                   </Link>
                 </li>
                 <li className="dropdown__item">
-                  <Link className="menu__list__item-link" to="/women">
+                  <Link
+                    className="menu__list__item-link"
+                    to={process.env.PUBLIC_URL + "/women"}
+                  >
                     Damas
                   </Link>
                 </li>
                 <li className="menu__list__item__dropdown--subLevel">
-                  <Link className="menu__list__item-link" to="/kid">
+                  <Link
+                    className="menu__list__item-link"
+                    to={process.env.PUBLIC_URL + "/kid"}
+                  >
                     Niños
                   </Link>
                   <ul className="dropdown">
                     <li className="dropdown__item">
-                      <Link className="menu__list__item-link" to="/sport">
+                      <Link
+                        className="menu__list__item-link"
+                        to={process.env.PUBLIC_URL + "/sport"}
+                      >
                         Deportivos
                       </Link>
                     </li>
                     <li className="dropdown__item">
-                      <Link className="menu__list__item-link" to="/casual">
+                      <Link
+                        className="menu__list__item-link"
+                        to={process.env.PUBLIC_URL + "/casual"}
+                      >
                         Casuales
                       </Link>
                     </li>
                     <li className="dropdown__item">
-                      <Link className="menu__list__item-link" to="/accesory">
+                      <Link
+                        className="menu__list__item-link"
+                        to={process.env.PUBLIC_URL + "/accesory"}
+                      >
                         Accesorios
                       </Link>
                     </li>
@@ -55,17 +73,26 @@ export default class Header extends Component {
               </ul>
             </li>
             <li className="menu__list__item">
-              <Link className="menu__list__item-link" to="/offer">
+              <Link
+                className="menu__list__item-link"
+                to={process.env.PUBLIC_URL + "/offer"}
+              >
                 Ofertas
               </Link>
             </li>
             <li className="menu__list__item">
-              <Link className="menu__list__item-link" to="/new">
+              <Link
+                className="menu__list__item-link"
+                to={process.env.PUBLIC_URL + "/new"}
+              >
                 Nuevo
               </Link>
             </li>
             <li className="menu__list__item">
-              <Link className="menu__list__item-link" to="/contact">
+              <Link
+                className="menu__list__item-link"
+                to={process.env.PUBLIC_URL + "/contact"}
+              >
                 Contacto
               </Link>
             </li>
@@ -76,7 +103,10 @@ export default class Header extends Component {
             <img className="cart__icon" src={Cart} alt="Cart" />
             <span className="cart__notification">5</span>
           </div>
-          <Link to="/register">
+          <Link
+            className="menu__list__item-link"
+            to={process.env.PUBLIC_URL + "/register"}
+          >
             <Button
               bgColor="primary"
               btnType="round"
@@ -84,13 +114,16 @@ export default class Header extends Component {
               btnAction="Sign Up"
             />
           </Link>
-          <Link to="/login">
-          <Button
-            bgColor="black-2"
-            btnType="round"
-            buttonText="Iniciar Sesión"
-            btnAction="Login"
-          />
+          <Link
+            className="menu__list__item-link"
+            to={process.env.PUBLIC_URL + "/login"}
+          >
+            <Button
+              bgColor="black-2"
+              btnType="round"
+              buttonText="Iniciar Sesión"
+              btnAction="Login"
+            />
           </Link>
         </div>
       </header>

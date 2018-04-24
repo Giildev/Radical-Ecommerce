@@ -16,11 +16,11 @@ const App = () => (
     <div>
       <Header />
       <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/faq" component={Faq} />
-      <Route path="/register" component={Signin} />
-      <Route path="/login" component={Login} />
-      {/* <Route path="/about" component={About}/> */}
+      <Route path={process.env.PUBLIC_URL + "/contact"} component={Contact} />
+      <Route path={process.env.PUBLIC_URL + "/faq"} component={Faq} />
+      <Route path={process.env.PUBLIC_URL + "/register"} component={Signin} />
+      <Route path={process.env.PUBLIC_URL + "/login"} component={Login} />
+      {/* <Route path={process.env.PUBLIC_URL + "/route"} component={Component} /> */}
     </div>
   </Router>
 );
