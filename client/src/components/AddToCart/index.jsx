@@ -1,20 +1,21 @@
 // Dependencies
 import React from "react";
 import { ButtonWithIcon } from "../Button/";
-import Img from "../../favicon.ico";
+import ShoppingBbag from "../../assets/img/svg/shopping-bag.svg";
+import Plus from "../../assets/img/svg/plus.svg";
 
 // Components & Containers
 import "./style.css";
 
 const AddToCart = () => (
-  <div>
+  <div className="atc__container">
     <ButtonWithIcon
       bgColor="primary"
       btnType=""
       btnAction="Add to Cart"
-      icoLeft={Img}
+      icoLeft={ShoppingBbag}
       buttonText="Add to Cart"
-      icoRight={Img}
+      icoRight={Plus}
     />
   </div>
 );

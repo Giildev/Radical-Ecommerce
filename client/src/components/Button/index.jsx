@@ -3,6 +3,7 @@ import React, { Component } from "react";
 
 // Components & Containers
 import "./style.css";
+import svgIcons from "../../assets/img/icons.svg";
 
 export class Button extends Component {
   changesHandler = (event, action) => {
@@ -31,19 +32,21 @@ export class ButtonWithIcon extends Component {
   };
   render() {
     return (
-      <div>
-        <button
-          className={`
+      <button
+        className={`
           btn btn__${this.props.bgColor} 
           btn__${this.props.btnType}
           `}
-          onClick={event => this.changesHandler("Click", this.props.btnAction)}
-        >
-          <img className="btn__ico" src={this.props.icoLeft} alt="Svg" />
-          {this.props.buttonText}
-          <img className="btn__ico" src={this.props.icoRight} alt="Svg" />
-        </button>
-      </div>
+        onClick={event => this.changesHandler("Click", this.props.btnAction)}
+      >
+        <svg className="btn__ico">
+          <use xlinkHref={`${svgIcons}#icon-shopping-cart`} />
+        </svg>
+        {this.props.buttonText}
+        <svg className="btn__ico">
+          <use xlinkHref={`${svgIcons}#icon-plus`} />
+        </svg>
+      </button>
     );
   }
 }
