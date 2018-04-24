@@ -13,6 +13,7 @@ export class Input extends Component {
           className="input"
           placeholder={this.props.inputPlaceHolder}
           type={this.props.inputType}
+          onInput={(e) => {window.localStorage.setItem('text', e.target.value)}}
         />
         <label className="label" htmlFor={this.props.inputName}>
           {this.props.inputLabel}
