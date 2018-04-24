@@ -10,7 +10,7 @@ import Contact from "./containers/Contact/";
 import Faq from "./containers/Faq/";
 import Signin from "./containers/Signin/";
 import Login from "./containers/Login/";
-import Login from "./containers/Profile/";
+import Discover from "./containers/Discover/";
 
 const App = () => (
   <Router>
@@ -21,7 +21,7 @@ const App = () => (
       <Route path={process.env.PUBLIC_URL + "/faq"} component={Faq} />
       <Route path={process.env.PUBLIC_URL + "/register"} component={Signin} />
       <Route path={process.env.PUBLIC_URL + "/login"} component={Login} />
-      <Route path={process.env.PUBLIC_URL + "/profile"} component={Profile} />
+      <Route path={process.env.PUBLIC_URL + "/discover"} component={Discover} />
       {/* <Route path={process.env.PUBLIC_URL + "/route"} component={Component} /> */}
     </div>
   </Router>
