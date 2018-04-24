@@ -34,15 +34,16 @@
   &__address{
     display: flex;
     flex-direction: column;
+    padding: 0 2rem;
 
     &__title {
-      font-size: 2.6rem;
+      font-size: 2rem;
       line-height: 6rem;
       color: var(--primary);
     }
 
     &__subTitle {
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
   }
 
@@ -59,7 +60,7 @@
 
     &__send {
       display: inherit;
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
   }
 }
