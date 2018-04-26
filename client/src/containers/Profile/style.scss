@@ -1,0 +1,55 @@
+.titleContainer{
+  width: 100%;
+  padding: 3rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.profileTitle{
+  margin: 1rem;
+}
+
+.profileSubTitle{
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.panelOptions{
+  width: 100%;
+  padding:  5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;  
+}
+
+.panelCard{
+  font-size: 2rem;
+  padding:  2rem;
+  border-radius: 50rem;
+  display: flex;
+  align-items: center;
+  transition: all .3s ease;
+  &:hover{
+    background-color: var(--primary);
+    cursor: pointer;
+    color: var(--white);
+    fill: var(--white);
+
+  }
+  
+    
+  &__ico{
+    width: 5rem;
+    height: 5rem;
+    padding: 0.3rem;
+  }
+  
+  &__text{
+    font-weight: 500;
+    padding: 1.5rem;
+    
+  }
+}
