@@ -1,0 +1,99 @@
+.firstContainer{
+  min-height: 10rem;
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  // para los bloques de texto justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.pageTitle{
+  font-size: 5rem;
+  padding: 0rem 1rem 0rem 7rem;
+}
+
+.pageSubtitle{
+  font-size: 3rem;
+  color: var(--grey-3);
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.pageText{
+  font-size: 1.5rem;
+  padding: 0rem 1rem 0rem 7rem;
+}
+
+.textContent{
+  font-size: 1.4rem;
+  padding: 0rem 8rem;
+  width: 30%;
+  &:nth-child(2){
+    padding: 1rem 8rem;
+    margin-top: -12rem;
+  }
+  &:nth-child(4){
+    //padding: 1rem 5rem;
+    margin-top: -4rem;
+  }
+  &:nth-child(6){
+    padding: 1rem 5rem;
+    margin-top: -3rem;
+  }
+
+
+  
+  &__end{
+    font-size: 1.4rem;
+    padding: 0.5rem 8rem;
+    margin: 5rem 0rem;
+    width: 30%;
+    align-self: flex-end;
+    &:nth-child(1){
+      padding: 8rem;
+      margin-top: 2rem;
+    }
+    &:nth-child(3){
+
+      margin-top: 1rem;
+    }
+    &:nth-child(5){
+      padding: 1rem 4rem;
+      margin-top: 5rem;
+    }
+  }
+}
+
+.contentContainer{
+  background-image: url(../../../src/assets/img/discoverchart.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 100rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.containerAction{
+  min-height: 10rem;
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.primary{
+  color: var(--primary);
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.secondary{
+  font-size: 2.5rem;
+  padding: 1rem;
+}
