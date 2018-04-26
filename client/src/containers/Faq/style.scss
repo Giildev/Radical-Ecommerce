@@ -4,6 +4,11 @@
 
   &__container {
     margin: var(--container);
+    min-height: 80vh;
+
+    &__content {
+      display: flex;
+    }
   }
 
   &__Img {
@@ -44,5 +49,68 @@
     color: var(--black-1);
     font-size: 1.8rem;
     margin: 0 2rem 8rem 2rem;
+  }
+
+  &__category {
+    flex: 1;
+    &__title {
+      color: var(--primary);
+      font-size: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    &__item {
+      color: var(--black-1);
+      font-size: 2.6rem;
+      padding: 0 2rem;
+      line-height: 5rem;
+    }
+  }
+
+  &__answer {
+    flex: 3;
+    font-size: 2.6rem;
+
+    &__container {
+    }
+
+    &__q {
+      width: 100%;
+      text-align: left;
+      font-size: inherit;
+      border: none;
+      flex: 1;
+      background-color: var(--black-1);
+      color: var(--white);
+      margin: 2rem 0;
+      padding: 1rem 2rem;
+      transition: all 0.2s;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:active {
+        transform: translate(0, 0.2rem);
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__a {
+      padding: 3rem 0;
+      display: flex;
+      transition: all ease 0.5s;
+
+      &-hide {
+        visibility: hidden;
+        overflow: hidden;
+        height: 0;
+        padding: 0;
+        opacity: 0;
+      }
+    }
   }
 }

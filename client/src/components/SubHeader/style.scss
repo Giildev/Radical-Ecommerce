@@ -1,34 +1,32 @@
-.container{
+.container {
   min-height: 40rem;
   max-height: 40rem;
   width: 100%;
-  background-image: url(../../../src/assets/img/subheaders/contact.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
-    &__overlay{
-      background-color: var(--overlay-header);
-      overflow: hidden;
-      min-height: 40rem;
-      max-height: 40rem;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+  &__overlay {
+    background-color: var(--overlay-header);
+    overflow: hidden;
+    min-height: 40rem;
+    max-height: 40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
-.title{
+.title {
   font-family: inherit;
   font-size: 5rem;
   font-weight: 800;
   color: var(--white);
   padding: 0 8rem;
-  &--sub{
+  &--sub {
     font-size: 2.5rem;
     font-weight: 800;
     color: var(--primary);
     padding: 0 8rem;
   }
-
 }
