@@ -5,7 +5,7 @@ import axios from "axios";
 // Components & Containers
 import "./style.css";
 
-class LoginForm extends Component {
+export default class LoginForm extends Component {
   constructor(props) {
     super(props);
 
@@ -19,7 +19,7 @@ class LoginForm extends Component {
     axios
       .post(`http://localhost:4000/api/login`, this.state)
       .then(function(response) {
-        console.log(response.data);
+        console.log(response.data);        
       })
       .catch(function(error) {
         console.log("error", error);
@@ -73,5 +73,3 @@ class LoginForm extends Component {
     );
   }
 }
-
-export default LoginForm;
