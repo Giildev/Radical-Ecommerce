@@ -1,6 +1,7 @@
 const User = require("./database/userSchema.js");
 const express = require("express");
 const app = express();
+const session = require("express-session");
 const mongoose = require("mongoose");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
@@ -21,6 +22,14 @@ app.use(cors());
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(
+  session({
+    secret: "keyboard cat",
+    resave: true,
+    saveUninitialized: true,
+    cookie: { maxAge: 60000 }
+  })
+);
 
 //*** Routes ***//
 const authRoutes = require("./routes.js");
@@ -58,22 +67,28 @@ app.post("/api/signup", (req, res) => {
 
 //*** login post ***//
 app.post("/api/login", (req, res) => {
-  if (res.send(req.body) != null) {
+  if (req.body != null) {
     console.log(req.body);
     const email = req.body.email;
     const password = req.body.password;
     const query = User.findOne({ email: email });
-    query.select("email password");
+    query.select("email password role");
     query.exec(function(err, user) {
       if (user != null) {
         const decrypt = bcrypt.compareSync(password, user.password);
         if (decrypt == true) {
+          const credentials = {
+            email: email,
+            password: user.password,
+            role: user.role
+          };
+          console.log(JSON.stringify(credentials));
           console.log("Log in Success");
         } else {
           console.log("Incorrect password!");
         }
       } else {
-        console.log("This user doesn't exis");
+        console.log("This user doesn't exists");
       }
     });
     //res.send(req.body.email); -> surge error(?)
