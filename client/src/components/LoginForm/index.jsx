@@ -19,7 +19,11 @@ export default class LoginForm extends Component {
     axios
       .post(`http://localhost:4000/api/login`, this.state)
       .then(function(response) {
-        console.log(response.data);        
+        console.log(response.data);
+        window.sessionStorage.setItem(
+          "userAuth",
+          JSON.stringify(response.data)
+        );
       })
       .catch(function(error) {
         console.log("error", error);
@@ -68,6 +72,9 @@ export default class LoginForm extends Component {
               Ingresar
             </button>
           </div>
+          <pre>
+            {window.sessionStorage.getItem("userAuth") ? "True" : "False"}
+          </pre>
         </div>
       </div>
     );

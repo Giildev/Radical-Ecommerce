@@ -56,8 +56,22 @@ app.post("/api/signup", (req, res) => {
       if (error) {
         res.send(error);
       } else {
-        res.send("Sign up Success!!!");
-        console.log("Sign up Success!!!");
+        const query = User.findOne({ email: dbDoc.email });
+        query.select("email password role");
+        query.exec(function(err, user) {
+          if (user != null) {
+            const decrypt = bcrypt.compareSync(req.body.password, dbDoc.password);
+            if (decrypt == true) {
+              const credentials = {
+                email: dbDoc.email,
+                password: user.password,
+                role: user.role
+              };
+              res.send(JSON.stringify(credentials));
+              console.log("Sign up Success");
+            }
+          } 
+        });        
       }
     });
   } else {
@@ -82,7 +96,7 @@ app.post("/api/login", (req, res) => {
             password: user.password,
             role: user.role
           };
-          console.log(JSON.stringify(credentials));
+          res.send(JSON.stringify(credentials));
           console.log("Log in Success");
         } else {
           console.log("Incorrect password!");
@@ -91,7 +105,6 @@ app.post("/api/login", (req, res) => {
         console.log("This user doesn't exists");
       }
     });
-    //res.send(req.body.email); -> surge error(?)
   } else {
     res.send(req.error);
   }
