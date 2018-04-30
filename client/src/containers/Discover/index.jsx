@@ -25,44 +25,7 @@ class Discover extends Component {
           </p>
         </div>
 
-        <div className="contentContainer">
-          <p className="textContent__end">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
-            iste, dignissimos suscipit nemo in ut,amet, cupiditate eligendi
-            consequatur culpa molestias! Sed minus consequuntur ipsam atque
-            odio, doloribus vitae aut!
-          </p>
-          <p className="textContent">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
-            iste, dignissimos suscipit nemo in ut,amet, cupiditate eligendi
-            consequatur culpa molestias! Sed minus consequuntur ipsam atque
-            odio, doloribus vitae aut!
-          </p>
-          <p className="textContent__end">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
-            iste, dignissimos suscipit nemo in ut,amet, cupiditate eligendi
-            consequatur culpa molestias! Sed minus consequuntur ipsam atque
-            odio, doloribus vitae aut!
-          </p>
-          <p className="textContent">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
-            iste, dignissimos suscipit nemo in ut,amet, cupiditate eligendi
-            consequatur culpa molestias! Sed minus consequuntur ipsam atque
-            odio, doloribus vitae aut!
-          </p>
-          <p className="textContent__end">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
-            iste, dignissimos suscipit nemo in ut,amet, cupiditate eligendi
-            consequatur culpa molestias! Sed minus consequuntur ipsam atque
-            odio, doloribus vitae aut!
-          </p>
-          <p className="textContent">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
-            iste, dignissimos suscipit nemo in ut,amet, cupiditate eligendi
-            consequatur culpa molestias! Sed minus consequuntur ipsam atque
-            odio, doloribus vitae aut!
-          </p>
-        </div>
+        <div className="contentContainer"></div>
 
         <div className="containerAction">
           <h3 className="primary">
