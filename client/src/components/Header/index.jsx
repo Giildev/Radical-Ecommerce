@@ -105,23 +105,12 @@ export default class Header extends Component {
           </div>
           <Link
             className="menu__list__item-link"
-            to={process.env.PUBLIC_URL + "/register"}
+            to={process.env.PUBLIC_URL + "/auth"}
           >
             <Button
               bgColor="primary"
               btnType="round"
-              buttonText="Registrarse"
-              btnAction="Sign Up"
-            />
-          </Link>
-          <Link
-            className="menu__list__item-link"
-            to={process.env.PUBLIC_URL + "/login"}
-          >
-            <Button
-              bgColor="black-2"
-              btnType="round"
-              buttonText="Iniciar Sesión"
+              buttonText="Ingresar"
               btnAction="Login"
             />
           </Link>
