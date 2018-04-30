@@ -33,10 +33,12 @@ export default class LoginForm extends Component {
   render() {
     return (
       <div>
-        <h1>Inicia Sesión!</h1>
-        <h3>Ingresa para poder realizar tus compras</h3>
+        <h1 className="logTitle">Inicia Sesión!</h1>
+        <br/>
+        <h3 className="subLogTitle">Ingresa para poder realizar tus compras</h3>
+        <br/>
         <div>
-          <div className="contact__row">
+          <div>
             <input
               id="email"
               className="input"
@@ -50,7 +52,7 @@ export default class LoginForm extends Component {
               Email
             </label>
           </div>
-          <div className="contact__row">
+          <div>
             <input
               id="password"
               className="input"
@@ -72,9 +74,6 @@ export default class LoginForm extends Component {
               Ingresar
             </button>
           </div>
-          <pre>
-            {window.sessionStorage.getItem("userAuth") ? "True" : "False"}
-          </pre>
         </div>
       </div>
     );

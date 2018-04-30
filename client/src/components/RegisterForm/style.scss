@@ -11,6 +11,7 @@
   display: block;
   transition: all .3s;
   resize: none;
+  box-shadow: var(--shadow-light);
   &:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(102,133,195, .1);
@@ -47,3 +48,16 @@
   height: 10rem;
   width: 95%;
 }
+
+.regTitle{
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--black);
+  color: var(--primary);
+}
+
+.subRegTitle{
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+

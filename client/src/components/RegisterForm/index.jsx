@@ -32,11 +32,13 @@ export default class RegisterForm extends Component {
   render() {
     return (
       <div>
-        <h1>Regístrate!</h1>
-        <h3>Llena el formulario para comenzar a disfrutar de nuesto portal</h3>
+        <h1 className="regTitle">Regístrate!</h1>
+        <br/>
+        <h3 className="subRegTitle">Llena el formulario para comenzar a disfrutar de nuesto portal</h3>
+        <br/>
         <div>
-          <div className="contact__row">
-            <div className="input__container">
+          <div>
+            <div>
               <input
                 id="name"
                 className="input"
@@ -51,8 +53,8 @@ export default class RegisterForm extends Component {
               </label>
             </div>
           </div>
-          <div className="contact__row">
-            <div className="input__container">
+          <div>
+            <div>
               <input
                 id="lastName"
                 className="input"
@@ -67,8 +69,8 @@ export default class RegisterForm extends Component {
               </label>
             </div>
           </div>
-          <div className="contact__row">
-            <div className="input__container">
+          <div>
+            <div>
               <input
                 id="email"
                 className="input"
@@ -83,8 +85,8 @@ export default class RegisterForm extends Component {
               </label>
             </div>
           </div>
-          <div className="contact__row">
-            <div className="input__container">
+          <div>
+            <div>
               <input
                 id="phone"
                 className="input"
@@ -99,8 +101,8 @@ export default class RegisterForm extends Component {
               </label>
             </div>
           </div>
-          <div className="contact__row">
-            <div className="input__container">
+          <div>
+            <div>
               <input
                 id="password"
                 className="input"

@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  justify-content: center;
+  background-image: url(../../../src/assets/img/isotipo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+
+
+
+  &__register{
+    padding: 6rem;
+
+
+  }
+  &__login{
+    padding: 6rem;
+  }
+}
